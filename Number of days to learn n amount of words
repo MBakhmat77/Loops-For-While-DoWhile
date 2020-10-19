@@ -1,0 +1,18 @@
+//
+//write a function in javascript that takes a non-negative number n 
+//(n> = 0) (the number
+//of english words the student wants to learn) as an argument and returns
+//the number of days it takes to learn n words.
+
+function englishWords(n){
+ let sum = 0;
+ if ( n === 0) return 0;
+  let d = 0;
+  let i = 5;
+  while (sum <= n ){
+  sum = sum + i;
+ i = i + 2;
+    d++;
+ }
+  return d;
+}
